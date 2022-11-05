@@ -14,12 +14,19 @@
 		8D4C82B52916AB22000E9BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4C82B42916AB22000E9BE0 /* Assets.xcassets */; };
 		8D4C82B82916AB22000E9BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4C82B62916AB22000E9BE0 /* LaunchScreen.storyboard */; };
 		9313935F03F56A80407E2F45 /* ShapeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93139E70A6766E608EDC3256 /* ShapeComponent.swift */; };
+		9313944B2975D4730A3FA2BA /* ContactComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313987FB33E539B9B38B859 /* ContactComponent.swift */; };
 		931394F30DB8E33FC8818EA3 /* LabelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93139B8B0BDA267528F558B9 /* LabelComponent.swift */; };
 		931397540714BF4477DE0989 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931396A094FAD91B0F84AE7E /* SpriteComponent.swift */; };
 		93139848E5C135567FEBF091 /* ScaleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93139EE47821FA842A9378ED /* ScaleComponent.swift */; };
 		931398C33732539D990DCA58 /* PositionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93139C4C19DA62D22B6D9249 /* PositionComponent.swift */; };
+		93139969A82BFCE9ED0ED574 /* ContactSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931397462F9D35FCE315E4EF /* ContactSystem.swift */; };
+		93139A36E2C94305744F6B86 /* NodeAndPhysicsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93139D492D46A2A6E5306E44 /* NodeAndPhysicsSystem.swift */; };
+		93139B6395B2F0024E660D0D /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931399F079E70409D37710D7 /* PhysicsComponent.swift */; };
 		93139BE6055ECE897CA207A3 /* NodeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313970F72C62F9D214AC382 /* NodeComponent.swift */; };
+		93139C92DBDB3CA251A16A15 /* ScaleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313921CF341BDA64E049267 /* ScaleSystem.swift */; };
+		93139CA78B176F993B2EBCE8 /* TouchyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93139D63911F3E454ED47C77 /* TouchyNode.swift */; };
 		93139D41FBA1D7AB506F0A4A /* ChildNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93139B0239DC81BBDF22FAE1 /* ChildNode.swift */; };
+		93139E548974DF0178737842 /* PositionSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93139366A67FE16D08B6D0E6 /* PositionSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +37,18 @@
 		8D4C82B22916AB1F000E9BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D4C82B42916AB22000E9BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D4C82B72916AB22000E9BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9313921CF341BDA64E049267 /* ScaleSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSystem.swift; sourceTree = "<group>"; };
+		93139366A67FE16D08B6D0E6 /* PositionSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionSystem.swift; sourceTree = "<group>"; };
 		931396A094FAD91B0F84AE7E /* SpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		9313970F72C62F9D214AC382 /* NodeComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeComponent.swift; sourceTree = "<group>"; };
+		931397462F9D35FCE315E4EF /* ContactSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactSystem.swift; sourceTree = "<group>"; };
+		9313987FB33E539B9B38B859 /* ContactComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactComponent.swift; sourceTree = "<group>"; };
+		931399F079E70409D37710D7 /* PhysicsComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
 		93139B0239DC81BBDF22FAE1 /* ChildNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildNode.swift; sourceTree = "<group>"; };
 		93139B8B0BDA267528F558B9 /* LabelComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelComponent.swift; sourceTree = "<group>"; };
 		93139C4C19DA62D22B6D9249 /* PositionComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionComponent.swift; sourceTree = "<group>"; };
+		93139D492D46A2A6E5306E44 /* NodeAndPhysicsSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeAndPhysicsSystem.swift; sourceTree = "<group>"; };
+		93139D63911F3E454ED47C77 /* TouchyNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchyNode.swift; sourceTree = "<group>"; };
 		93139E70A6766E608EDC3256 /* ShapeComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeComponent.swift; sourceTree = "<group>"; };
 		93139EE47821FA842A9378ED /* ScaleComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +87,7 @@
 				8D4C82AF2916AB1F000E9BE0 /* GameViewController.swift */,
 				8D4C82AD2916AB1F000E9BE0 /* GameScene.swift */,
 				93139AA041DCE812819A9DF8 /* Components */,
+				9313907D108B54E61A9B5957 /* Systems */,
 				8D4C82B12916AB1F000E9BE0 /* Main.storyboard */,
 				8D4C82B42916AB22000E9BE0 /* Assets.xcassets */,
 				8D4C82B62916AB22000E9BE0 /* LaunchScreen.storyboard */,
@@ -80,16 +95,30 @@
 			path = NodeComponentECS;
 			sourceTree = "<group>";
 		};
+		9313907D108B54E61A9B5957 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				931397462F9D35FCE315E4EF /* ContactSystem.swift */,
+				93139D492D46A2A6E5306E44 /* NodeAndPhysicsSystem.swift */,
+				93139366A67FE16D08B6D0E6 /* PositionSystem.swift */,
+				9313921CF341BDA64E049267 /* ScaleSystem.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
 		93139AA041DCE812819A9DF8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				93139B0239DC81BBDF22FAE1 /* ChildNode.swift */,
+				9313987FB33E539B9B38B859 /* ContactComponent.swift */,
+				93139B8B0BDA267528F558B9 /* LabelComponent.swift */,
+				9313970F72C62F9D214AC382 /* NodeComponent.swift */,
+				931399F079E70409D37710D7 /* PhysicsComponent.swift */,
 				93139C4C19DA62D22B6D9249 /* PositionComponent.swift */,
+				93139EE47821FA842A9378ED /* ScaleComponent.swift */,
 				93139E70A6766E608EDC3256 /* ShapeComponent.swift */,
 				931396A094FAD91B0F84AE7E /* SpriteComponent.swift */,
-				93139B8B0BDA267528F558B9 /* LabelComponent.swift */,
-				93139EE47821FA842A9378ED /* ScaleComponent.swift */,
-				9313970F72C62F9D214AC382 /* NodeComponent.swift */,
-				93139B0239DC81BBDF22FAE1 /* ChildNode.swift */,
+				93139D63911F3E454ED47C77 /* TouchyNode.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -175,6 +204,13 @@
 				93139848E5C135567FEBF091 /* ScaleComponent.swift in Sources */,
 				93139BE6055ECE897CA207A3 /* NodeComponent.swift in Sources */,
 				93139D41FBA1D7AB506F0A4A /* ChildNode.swift in Sources */,
+				93139E548974DF0178737842 /* PositionSystem.swift in Sources */,
+				93139C92DBDB3CA251A16A15 /* ScaleSystem.swift in Sources */,
+				93139B6395B2F0024E660D0D /* PhysicsComponent.swift in Sources */,
+				9313944B2975D4730A3FA2BA /* ContactComponent.swift in Sources */,
+				93139CA78B176F993B2EBCE8 /* TouchyNode.swift in Sources */,
+				93139A36E2C94305744F6B86 /* NodeAndPhysicsSystem.swift in Sources */,
+				93139969A82BFCE9ED0ED574 /* ContactSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

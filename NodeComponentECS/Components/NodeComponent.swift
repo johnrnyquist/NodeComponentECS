@@ -1,20 +1,31 @@
 import GameplayKit
 
 enum NodeType: CaseIterable {
+    case circle
+    case floor
     case label
-    case shape
     case sprite
+    case square
 }
 
 class NodeComponent: GKComponent {
-    let node = SKNode()
-}
+    let node = TouchyNode()
 
-// This is essentially a System as it modifies the Component
-extension NodeComponent {
-    override func update(deltaTime seconds: TimeInterval) {
-        if let hasPos = entity?.component(ofType: PositionComponent.self)?.currentPosition {
-            node.position = hasPos
-        }
+    init(child: ChildNode) {
+        node.addChild(child.asNode())
+        super.init()
+    }
+
+    override func didAddToEntity() {
+        node.entity = entity
+        node.isUserInteractionEnabled = true
+    }
+
+    override func willRemoveFromEntity() {
+        node.entity = nil
+    }
+
+    required init?(coder: NSCoder) { 
+        fatalError()
     }
 }

@@ -2,10 +2,6 @@ import SpriteKit
 import GameplayKit
 
 class SpriteComponent: GKComponent, ChildNode {
-    func asNode() -> SKNode {
-        return sprite
-    }
-
     let sprite: SKSpriteNode
 
     override init() {
@@ -13,8 +9,9 @@ class SpriteComponent: GKComponent, ChildNode {
         super.init()
     }
 
+    func asNode() -> SKNode { sprite }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }

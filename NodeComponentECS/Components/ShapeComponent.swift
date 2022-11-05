@@ -2,24 +2,30 @@ import SpriteKit
 import GameplayKit
 
 enum Shape {
-    case circle, square
+    case circle
+    case square
+    case floor
 }
 
 class ShapeComponent: GKComponent, ChildNode {
     let shape: SKShapeNode
 
-    init(shape: Shape) {
-        switch shape {
-            case .circle: self.shape = SKShapeNode(circleOfRadius: 20)
-            case .square: self.shape = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 20, height: 20))
+    init(shape type: Shape) {
+        switch type {
+            case .circle:
+                shape = SKShapeNode(circleOfRadius: 20)
+                shape.fillColor = .purple
+            case .square:
+                shape = SKShapeNode(rectOf: CGSize(width: 50, height: 50))
+                shape.fillColor = .red
+            case .floor:
+                shape = SKShapeNode(rectOf: CGSize(width: 800, height: 20))
+                shape.fillColor = .orange
         }
-        self.shape.fillColor = .purple
         super.init()
     }
 
-    func asNode() -> SKNode {
-        return shape
-    }
+    func asNode() -> SKNode { shape }
 
     required init?(coder: NSCoder) {
         fatalError()

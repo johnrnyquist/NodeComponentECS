@@ -3,9 +3,17 @@ import GameplayKit
 class PositionComponent: GKComponent {
     var currentPosition: CGPoint
 
-    init(pos: CGPoint) {
-        currentPosition = pos
+    init(position: CGPoint) {
+        self.currentPosition = position
         super.init()
+    }
+
+    override func didAddToEntity() {
+        super.didAddToEntity()
+        guard let entity,
+              let nodeComponent = entity.component(ofType: NodeComponent.self)
+        else { return }
+        nodeComponent.node.position = currentPosition
     }
 
     required init?(coder: NSCoder) {
