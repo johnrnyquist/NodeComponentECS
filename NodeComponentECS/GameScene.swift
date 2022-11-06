@@ -48,9 +48,8 @@ class GameScene: SKScene {
                 entity.addComponent(contactComponent)
             case .circle:
                 childNode = ShapeComponent(shape: .circle)
-                body = nil
-//                body = SKPhysicsBody(circleOfRadius: 20)
-//                body?.categoryBitMask = PhysicsCategory.circle
+                body = SKPhysicsBody(circleOfRadius: 20)
+                body?.categoryBitMask = PhysicsCategory.circle
             case .square:
                 childNode = ShapeComponent(shape: .square)
                 body = SKPhysicsBody(rectangleOf: CGSize(width: 50, height: 50))
@@ -85,11 +84,6 @@ class GameScene: SKScene {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
         let loc = touch.location(in: self)
-        if nodeTypes.isEmpty {
-            nodeTypes = NodeType.allCases
-        }
-        let type = nodeTypes.popLast()!
-        addNode(type, at: loc)
         if loc.y > 0 {
             addNode(.circle, at: loc)
         } else {
