@@ -2,7 +2,6 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-    var nodeTypes = [NodeType]()
     var entities: [GKEntity] = []
     var previousTime: TimeInterval = 0
      var systems: [GKComponentSystem] = {
