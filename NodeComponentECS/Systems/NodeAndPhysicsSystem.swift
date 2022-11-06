@@ -16,10 +16,8 @@ class NodeAndPhysicsSystem: GKComponentSystem<GKComponent> {
                                         dy: hasPhysicsPosition.y - _self.node.position.y)
                 let velocity = CGVector(dx: distance.dx / CGFloat(seconds), dy: distance.dy / CGFloat(seconds))
                 physicsComponent.body?.velocity = velocity
-            } else {
-                if let hasPos = _self.entity?.component(ofType: PositionComponent.self)?.currentPosition {
-                    _self.node.position = hasPos
-                }
+            } else if let hasPos = _self.entity?.component(ofType: PositionComponent.self)?.currentPosition {
+                _self.node.position = hasPos
             }
         }
     }

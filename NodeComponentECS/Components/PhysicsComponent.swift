@@ -10,11 +10,7 @@ struct PhysicsCategory {
 
 class PhysicsComponent: GKComponent {
     var body: SKPhysicsBody?
-    var position: CGPoint? = nil {
-        didSet {
-            print(self, position)
-        }
-    }
+    var position: CGPoint?
 
     init(body: SKPhysicsBody) {
         self.body = body
