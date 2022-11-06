@@ -86,6 +86,8 @@
 				8D4C82A72916AB1F000E9BE0 /* AppDelegate.swift */,
 				8D4C82AF2916AB1F000E9BE0 /* GameViewController.swift */,
 				8D4C82AD2916AB1F000E9BE0 /* GameScene.swift */,
+				93139D63911F3E454ED47C77 /* TouchyNode.swift */,
+				93139B0239DC81BBDF22FAE1 /* ChildNode.swift */,
 				93139AA041DCE812819A9DF8 /* Components */,
 				9313907D108B54E61A9B5957 /* Systems */,
 				8D4C82B12916AB1F000E9BE0 /* Main.storyboard */,
@@ -109,7 +111,6 @@
 		93139AA041DCE812819A9DF8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				93139B0239DC81BBDF22FAE1 /* ChildNode.swift */,
 				9313987FB33E539B9B38B859 /* ContactComponent.swift */,
 				93139B8B0BDA267528F558B9 /* LabelComponent.swift */,
 				9313970F72C62F9D214AC382 /* NodeComponent.swift */,
@@ -118,7 +119,6 @@
 				93139EE47821FA842A9378ED /* ScaleComponent.swift */,
 				93139E70A6766E608EDC3256 /* ShapeComponent.swift */,
 				931396A094FAD91B0F84AE7E /* SpriteComponent.swift */,
-				93139D63911F3E454ED47C77 /* TouchyNode.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
