@@ -85,6 +85,11 @@ class GameScene: SKScene {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
         let loc = touch.location(in: self)
+        if nodeTypes.isEmpty {
+            nodeTypes = NodeType.allCases
+        }
+        let type = nodeTypes.popLast()!
+        addNode(type, at: loc)
         if loc.y > 0 {
             addNode(.circle, at: loc)
         } else {
